@@ -1,23 +1,10 @@
-// Example of pointers in Rust
+// Example of using a pointer in Rust
 fn main() {
-    // Declare a mutable integer variable.
-    let mut x = 5;
+    // Create a mutable integer pointer
+    let mut num_ptr = Box::new(5);
 
-    // Create a pointer to the integer variable.
-    let ptr_x = &mut x;
+    // Dereference the pointer to get the value
+    *num_ptr += 10;
 
-    // Change the value through the pointer.
-    *ptr_x = 10;
-
-    // Print the value through the pointer.
-    println!("The value of x is: {}", x);
-
-    // Declare a reference to a reference to an integer variable.
-    let ptr_ptr_x = &ptr_x;
-
-    // Change the value through the reference.
-    **ptr_ptr_x = 20;
-
-    // Print the value through the reference.
-    println!("The value of x is: {}", x);
+    println!("Value of the pointer: {}", *num_ptr);
 }
