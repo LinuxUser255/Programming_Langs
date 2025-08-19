@@ -1,16 +1,12 @@
 # Rust Ownership and Python OOP
 
 ```rust
+
 struct Book {
     pages: u32,
     rating: u8,
 }
 
-fn main() {
-    let book = Book::new(300, 4);
-    book.display_page_count();
-    book.display_rating();
-}
 
 impl Book {
     fn new(pages: u32, rating: u8) -> Self {
@@ -25,6 +21,16 @@ impl Book {
         println!("Rating: {}/5", self.rating);
     }
 }
+
+fn main() {
+    let book = Book::new(300, 4);
+    book.display_page_count();
+    book.display_rating();
+}
+
+```
+
+```
 ```
 
 ## Step-by-Step Execution Order
@@ -216,11 +222,6 @@ struct Vehicle {
     year: u32,
 }
 
-fn main() {
-    // This is where code execution begins
-    let my_car = Vehicle::new("Toyota".to_string(), "Camry".to_string(), 2004);
-}
-
 impl Vehicle {
     fn new(make: String, model: String, year: u32) -> Self {
         // Print statement to show object creation
@@ -229,6 +230,13 @@ impl Vehicle {
         Self { make, model, year }
     }
 }
+
+
+fn main() {
+    // This is where code execution begins
+    let my_car = Vehicle::new("Toyota".to_string(), "Camry".to_string(), 2004);
+}
+
 ```
 
 ## Side-by-Side Comparison:
@@ -530,22 +538,6 @@ struct Book {
     rating: u8,
 }
 
-// 2: Program execution starts here
-fn main() {
-    // 3: Create a Book instance - memory is allocated on the stack
-    // Ownership of the Book struct is transferred to the 'book' variable
-    let book = Book::new(300, 4);
-
-    // 4: Call display_page_count method - Rust automatically passes a reference to 'book'
-    // The &self parameter receives this borrowed reference (similar to Python's self)
-    book.display_page_count();
-
-    // 5: Call display_rating method - Another temporary borrow occurs
-    // The book variable lends itself to the method via &self
-    book.display_rating();
-
-    // 6: End of main function scope - the Book struct is deallocated from the stack
-}
 
 impl Book {
     // Constructor method - called during step 3
@@ -565,6 +557,26 @@ impl Book {
         println!("Book has a rating of {}/5", self.rating);
     }
 }
+
+
+// 2: Program execution starts here
+fn main() {
+    // 3: Create a Book instance - memory is allocated on the stack
+    // Ownership of the Book struct is transferred to the 'book' variable
+    let book = Book::new(300, 4);
+
+    // 4: Call display_page_count method - Rust automatically passes a reference to 'book'
+    // The &self parameter receives this borrowed reference (similar to Python's self)
+    book.display_page_count();
+
+    // 5: Call display_rating method - Another temporary borrow occurs
+    // The book variable lends itself to the method via &self
+    book.display_rating();
+
+    // 6: End of main function scope - the Book struct is deallocated from the stack
+}
+
 ```
 
 Rust's `&self` serves a very similar purpose to Python's `self`, but with the added complexity of Rust's ownership and borrowing system that ensures memory safety at compile time.
+
