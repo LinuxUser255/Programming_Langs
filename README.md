@@ -2,7 +2,7 @@
 
 A repository containing **basic examples and tutorials** of the most common programming languages.
 
-### Languages Included (All Completed ✅)
+### Languages Included
 
 * [C](./C)
 * [C++](./Cpp)
