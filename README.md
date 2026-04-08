@@ -1,24 +1,25 @@
 # Programming_Langs
 
-A repository containing basic examples of some of the most common programming languages.
+A repository containing **basic examples and tutorials** of the most common programming languages.
 
-### Languages included
+### Languages Included (All Completed ✅)
 
-- C
-- Cpp
-- Rust
-- Go
+* [C](./C)
+* [C++](./Cpp)
+* [Rust](./Rust)
+* [Go](./Go)
+* [Python](./Python)
+* [JavaScript](./JavaScript)
+* [Haskell](./Haskell)
+* [C#](./CSharp)
+* [Java](./Java)
+* [Kotlin](./Kotlin)
+* [Lua](./Lua)
 
-### TODO
+Each language folder contains:
+- Focused example files (hello world, variables, control flow, functions, data structures, OOP/records, pointers/references where applicable).
+- `README.md` with explanations and how to compile/run.
+- Clean, well-commented, idiomatic code.
 
+**Goal**: Quick reference to see how core concepts are expressed across languages.
 
-<br>
-
-**Add the following**
-- Python
-- Java Script
-- Haskel
-- C#
-- Java
-- Kotlin
-- Lua
