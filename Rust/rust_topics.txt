@@ -1,0 +1,46 @@
+Review this list of Rust files/code and documentation, and tell me what other topics / rust programming should be added.
+
+- borrow-basic.rs
+- functions.rs
+- hello.rs
+- if-else.rs
+- learning_roadmap.md
+- logical-expressions.md
+- loops.rs
+- oop-ownership.rs
+- Ownership-Basic.md
+- ownership.md
+- pointers.rs
+- ReadingRust.md
+- rust_topics.txt
+- structs.rs
+- UserInput.md
+- variables.rs
+
+--- complete list
+
+
+├── hello.rs
+├── variables.rs
+├── types.rs                  ← add
+├── functions.rs
+├── if-else.rs
+├── loops.rs
+├── enums.rs                  ← add
+├── structs.rs
+├── error-handling.rs         ← add
+├── collections.rs            ← add
+├── ownership.md
+├── borrow-basic.rs
+├── lifetimes.rs              ← add
+├── traits.rs                 ← add
+├── generics.rs               ← add
+├── closures.rs               ← add
+├── iterators.rs              ← add
+├── smart-pointers.rs         ← add
+├── modules/                  ← add folder
+├── testing.rs                ← add
+├── UserInput.md
+├── ReadingRust.md
+├── learning_roadmap.md
+└── rust_topics.txt
